@@ -27,6 +27,23 @@ html {
   overflow-x: hidden;
 }
 
+.heading {
+  text-align: center;
+  padding: 5rem 1rem;
+  padding-top: 2rem;
+  font-size: 3.5rem;
+  color: var(--red);
+  text-transform: uppercase;
+}
+
+.title {
+  text-align: center;
+  padding: 0rem 1rem;
+  font-size: 2.5rem;
+  color: #666;
+  font-weight: 300;
+}
+
 header .menu {
   position: fixed;
   top: 1.5rem;
@@ -189,4 +206,70 @@ header .navbar li a:hover {
 
 .nav-toggle {
   transform: translateX(-30rem);
+}
+
+.feature {
+  background: #2c3a47;
+}
+
+.feature .title {
+  color: #eee;
+}
+
+.feature .card_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.feature .card_container .card {
+  height: 45rem;
+  width: 30rem;
+  margin: 2rem 1rem;
+  padding-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature .card_container .card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.feature .card_container .card .info {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  background: linear-gradient(transparent, #000);
+  padding: 0 2rem;
+  padding-top: 85%;
+}
+
+.feature .card_container .card:hover .info {
+  bottom: 0%;
+}
+
+.feature .card_container .card .info h3 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.feature .card_container .card .info .stars {
+  font-size: 1.5rem;
+  color: var(--red);
+  padding: 1rem 0;
+}
+
+.feature .card_container .card .info p {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.feature .card_container .card .info .btn {
+  box-shadow: none;
+  margin: 1.5rem 0;
 }
