@@ -20,16 +20,49 @@
     <header>
       <nav class="navbar">
         <ul>
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#Feature">Feature</a></li>
-          <li><a href="#About">About</a></li>
-          <li><a href="#Gallery">Gallery</a></li>
-          <li><a href="#Review">Review</a></li>
-          <li><a href="#Contact">Contact</a></li>
+          <li style="--l: 1"><a href="#Home">Home</a></li>
+          <li style="--l: 2"><a href="#Feature">Feature</a></li>
+          <li style="--l: 3"><a href="#About">About</a></li>
+          <li style="--l: 4"><a href="#Gallery">Gallery</a></li>
+          <li style="--l: 5"><a href="#Review">Review</a></li>
+          <li style="--l: 6"><a href="#Contact">Contact</a></li>
         </ul>
       </nav>
       <div class="menu"><i class="fas fa-bars"></i></div>
     </header>
+
+    <!-- Home section -->
+
+    <section class="home" id="Home">
+      <div class="video_container">
+        <video src="images/background.mp4" muted loop autoplay></video>
+      </div>
+
+      <div class="content">
+        <h1>explore.</h1>
+        <h3>its time to travel</h3>
+
+        <div class="form_container">
+          <form action="">
+            <h3>Search your destination</h3>
+
+            <span>location</span>
+            <input type="text" placeholder="Place you want to visit" />
+
+            <span>guest members</span>
+            <input type="number" placeholder="how many people" />
+
+            <span>arrivals</span>
+            <input type="date" placeholder="Place you want to visit" />
+
+            <span>location</span>
+            <input type="date" placeholder="Place you want to visit" />
+
+            <input class="btn" type="submit" value="search" />
+          </form>
+        </div>
+      </div>
+    </section>
 
     <!-- jquery link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

@@ -60,13 +60,133 @@ header .navbar ul {
   list-style: none;
 }
 
+header .navbar ul li {
+  margin: 1.4rem;
+  animation: fadeIn 0.2s linear backwards;
+  animation-delay: calc(0.3s * var(--l));
+}
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-7rem);
+    opacity: 0;
+  }
+}
+
 header .navbar li a {
   font-size: 3rem;
   color: #fff;
 }
+
 header .navbar li a:hover {
   color: var(--red);
 }
+
 .fa-times {
   transform: rotate(180deg) skew(-180deg);
+}
+
+.home {
+  position: relative;
+  min-height: 100vh;
+  z-index: 0;
+}
+
+.home .video_container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.home .content {
+  min-height: 100vh;
+  width: 45rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(0.9rem);
+  text-align: center;
+  padding: 2rem 3rem;
+}
+
+.home .content h1 {
+  font-size: 4rem;
+  padding-top: 4vh;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.home .content h3 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: lighter;
+}
+
+.home .content .form_container form {
+  width: 100%;
+  background: #fff;
+  padding: 1rem 2rem;
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+}
+
+.home .content .form_container form h3 {
+  font-size: 2.5rem;
+  padding: 2rem 1rem;
+  color: #333;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.home .content .form_container form span {
+  font-size: 2rem;
+  display: block;
+  padding: 1.4rem 0;
+  color: var(--red);
+  text-align: left;
+}
+
+.home .content .form_container form input {
+  height: 3.5rem;
+  width: 100%;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  background: #eee;
+}
+
+.home .content .form_container form .btn {
+  width: 15rem;
+  background-color: var(--red);
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+  .html .content {
+    width: 100%;
+  }
+}
+
+.btn {
+  height: 3.5rem;
+  width: 15rem;
+  background: var(--red);
+  color: #fff;
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin: 1rem o;
+  box-shadow: 0 0.3rem 0.5rem var(--red);
+  opacity: 0.7;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.nav-toggle {
+  transform: translateX(-30rem);
 }
