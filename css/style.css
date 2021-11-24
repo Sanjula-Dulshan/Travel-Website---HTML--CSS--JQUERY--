@@ -216,14 +216,14 @@ header .navbar li a:hover {
   color: #eee;
 }
 
-.feature .card_container {
+.feature .card-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 2rem 0;
 }
 
-.feature .card_container .card {
+.feature .card-container .card {
   height: 45rem;
   width: 30rem;
   margin: 2rem 1rem;
@@ -232,13 +232,13 @@ header .navbar li a:hover {
   overflow: hidden;
 }
 
-.feature .card_container .card img {
+.feature .card-container .card img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.feature .card_container .card .info {
+.feature .card-container .card .info {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -249,27 +249,92 @@ header .navbar li a:hover {
   padding-top: 85%;
 }
 
-.feature .card_container .card:hover .info {
+.feature .card-container .card:hover .info {
   bottom: 0%;
 }
 
-.feature .card_container .card .info h3 {
+.feature .card-container .card .info h3 {
   font-size: 3rem;
   color: #fff;
 }
 
-.feature .card_container .card .info .stars {
+.feature .card-container .card .info .stars {
   font-size: 1.5rem;
   color: var(--red);
   padding: 1rem 0;
 }
 
-.feature .card_container .card .info p {
+.feature .card-container .card .info p {
   font-size: 1.5rem;
   color: #fff;
 }
 
-.feature .card_container .card .info .btn {
+.feature .card-container .card .info .btn {
   box-shadow: none;
   margin: 1.5rem 0;
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.about .row .image img {
+  height: 100vh;
+  width: 80vh;
+}
+
+.about .row .content h3 {
+  font-size: 3rem;
+  color: var(--red);
+}
+
+.about .row .content p {
+  font-size: 1.7rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+.about .box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about .box-container .box {
+  margin: 2rem;
+  height: 15rem;
+  width: 25rem;
+  border-radius: 1rem;
+  background: var(--red);
+  text-align: center;
+  color: #fff;
+}
+
+.about .box-container .box i {
+  font-size: 5rem;
+  margin: 2rem 0;
+}
+
+.about .box-container .box h3 {
+  font-size: 2rem;
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 55%;
+  }
+
+  .about .row {
+    flex-flow: column;
+    width: 90%;
+  }
+
+  .about .row .image img {
+    width: 90vw;
+  }
 }
