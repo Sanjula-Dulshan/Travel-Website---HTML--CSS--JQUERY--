@@ -593,6 +593,15 @@ textarea {
   .contact form .inputBox input {
     width: 100%;
   }
+  .home .video_container video {
+    position: absolute;
+    top: -130px;
+    left: 0;
+    height: 130%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
 }
 
 @media (max-width: 768px) {
