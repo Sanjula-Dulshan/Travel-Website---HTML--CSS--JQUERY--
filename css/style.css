@@ -2,6 +2,7 @@
 
 :root {
   --red: #ee3623;
+  --background: #2c3a47;
 }
 
 * {
@@ -143,7 +144,7 @@ header .navbar li a:hover {
 .home .content {
   min-height: 100vh;
   width: 45rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(0.9rem);
   text-align: center;
   padding: 2rem 3rem;
@@ -202,7 +203,7 @@ header .navbar li a:hover {
 }
 
 .feature {
-  background: #2c3a47;
+  background: var(--background);
 }
 
 .feature .title {
@@ -473,7 +474,7 @@ header .navbar li a:hover {
 }
 
 .contact {
-  background: #2c3a47;
+  background: var(--background);
 }
 
 .contact .title {
@@ -601,9 +602,9 @@ textarea {
   }
   .home .video_container video {
     position: absolute;
-    top: -130px;
+    top: 0px;
     left: 0;
-    height: 130%;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     z-index: -1;
